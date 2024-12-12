@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #dbbf86;
+  --primery: #f1f1f1;
+  --second: #ccc;
+  --background-color: #1c1c1c;
+  --font: 'Montserrat', sans-serif;
+  --font-size: 18px;
+}
+
+body {
+  color: var(--primery);
+  background: var(--background-color);
+  font-family: var(--font);
+  font-size: var(--font-size);
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+header {
+  height: 70px;
+
+  nav a {
+    margin: 0 10px;
+    transition: color .2s ease-in;
+
+    &:first-child { margin-left: 0}
+    &:last-child { margin-right: 0}
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+select, input, button, textarea, .btn {
+  outline: none;
+  border: rgba(255, 255, 255, .5) solid 2px;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.card {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.services-form {
+  div {
+    margin: 10px 0;
+    &:first-child { margin-top: 0}
+    &:last-child { margin-bottom: 0}
+  }
+}
+
+.auth-form {
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  width: 500px;
+
+  input {
+    margin: 10px 0;
+  }
+}
